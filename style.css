@@ -1,0 +1,44 @@
+.custom {
+  max-width: 1600px;
+}
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+}
+.image__item-text {
+  text-align: center;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.image__item-text {
+  font-size: 1.5rem;
+  margin-top: -10px;
+}
+.image__item:hover p {
+  color: #1fcfca;
+}
+
+figure {
+  overflow: hidden;
+}
+
+.image__item figure img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.image__item figure:hover img {
+  transform: scale(1.2);
+}
+
+
+.image__item:hover figure img {
+  transform
+}
+@media (max-width: 768px) {
+  .imageContainer {
+    display: block;
+  }
+}
