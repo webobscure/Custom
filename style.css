@@ -15,30 +15,33 @@ a {
 }
 .image__item-text {
   font-size: 1.5rem;
-  margin-top: -10px;
+  margin-top: -2px;
 }
 .image__item:hover p {
   color: #1fcfca;
 }
-
 figure {
   overflow: hidden;
+  margin: 0 auto;
 }
-
+.rimage-column {
+  height:200px;
+}
 .image__item figure img {
   transform: scale(1);
-  transition: 0.3s ease-in-out;
+  transition: 1s;
 }
 .image__item figure:hover img {
-  transform: scale(1.2);
-}
-
-
-.image__item:hover figure img {
-  transform
+  transform: scale(1.05);
 }
 @media (max-width: 768px) {
   .imageContainer {
     display: block;
+  }
+  .image__column-row {
+    text-align: center;
+  }
+  .rimage-media {
+    height:100%;
   }
 }
