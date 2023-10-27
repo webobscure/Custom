@@ -1,6 +1,7 @@
 .get-your-look{
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .black-container__image {
@@ -34,8 +35,8 @@
 }
 
 .black-container{
-    position: absolute;
-    width: 40.9%;
+    position: relative;
+    width: 100%;
     border-radius: 16px;
     z-index: 9;
     line-height: 0.7;
