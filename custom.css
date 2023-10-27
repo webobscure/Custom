@@ -1,43 +1,78 @@
 .get-your-look{
     display: flex;
+    gap: 15px;
 }
 
+.black-container__image {
+    transition: 0.3s;
+}
 .image-top{
     display: flex;
     flex-direction: column-reverse;
 }
 
-img{
-    width: 100%;
+.black-container__title {
+    font-size: 30px;
 }
+
+.black-container__text {
+    font-size: 20px;
+}
+
+
 
 .hover-container{
     background-color: #000;
     color: #fff;
     text-align: center;
     transition: 0.5s;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .black-container{
     position: absolute;
-    width: 49.5%;
+    width: 40.9%;
     border-radius: 16px;
     z-index: 9;
+    line-height: 0.7;
+}
+
+.black-container__btn {
+    border: 1px solid #FFF;
+    color:#FFF;
+    background: #000;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+}
+
+.black-container__btn:hover {
+    cursor: grab;
+    background: #1fcfca;
+    box-shadow: 1px 1px 5px gray;
+    border: none;
 }
 
 .black-container-top{
-    top: 0;
+    top: 1%;
 }
-
+.black-container-bottom {
+    bottom: 1;
+}
 .get-your-look__item{
     overflow: hidden;
 }
 
-.get-your-look__item:hover .black-container{
-    opacity: 0.6;
+.get-your-look__item:hover .hover-container{
+    background: rgba(0,0,0, 0.6);
 }
 
 .get-your-look__item:hover img{
-    scale: 1.5;
+    scale: 1.2;
     
 }
